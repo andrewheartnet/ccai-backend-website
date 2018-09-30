@@ -12,8 +12,8 @@
 	</head>
 
 	<body style="background-color: #f7eaff;">
-		<div class="container">
-			<h1>Summary View</h1>
+		<div class="container" id="accordionExample">
+			<h1>CCAI - Summary View</h1>
 
 			<table class="table table-bordered table-hover">
 				<thead class="thead-dark">
@@ -27,8 +27,8 @@
 				</thead>
 
 				<tbody>
-					<tr>
-						<td style="text-align: center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
+					<tr id="row-1">
+						<td style="text-align: center"><button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#nested-table-1" aria-expanded="true" aria-controls="nested-table-1">+</button></td>
 						<td>1234-1234-1234</td>
 						<td>Adi Budi Santoso</td>
 						<td>Ciputat</td>
@@ -36,11 +36,86 @@
 					</tr>
 
 					<tr>
-						<td style="text-align: center"><button type="button" class="btn btn-warning btn-sm">+</button></td>
+						<td colspan="5">
+							<div id="nested-table-1" class="collapse hide" aria-labelledby="row-1" data-parent="#row-1">
+								<table class="table table-bordered table-hover" style="margin-bottom: 0px">
+									<thead class="thead-dark">
+										<tr>
+											<th>Experience No.</th>
+											<th>Timestamp</th>
+											<th>Story Score</th>
+											<th>GDM Score</th>
+											<th>POSM Score</th>
+											<th>Proposal Score</th>
+											<th>Time</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2018-08-08 05:55:20</td>
+											<td>26/30</td>
+											<td>40/60</td>
+											<td>4324</td>
+											<td>3</td>
+											<td>12 min</td>
+											<td><a href="#">See Journey Graph</a></td>
+										</tr>
+
+										<tr>
+											<td>2</td>
+											<td>2018-08-09 05:55:20</td>
+											<td>30/30</td>
+											<td>50/65</td>
+											<td></td>
+											<td></td>
+											<td>10 min</td>
+											<td><a href="#">See Journey Graph</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+
+					<tr id="row-2">
+						<td style="text-align: center"><button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#nested-table-2" aria-expanded="true" aria-controls="nested-table-2">+</button></td>
 						<td>1234-1234-1235</td>
 						<td>Budi Charlie</td>
 						<td>Tangerang</td>
 						<td>1</td>
+					</tr>
+
+					<tr>
+						<td colspan="5">
+							<div id="nested-table-2" class="collapse hide" aria-labelledby="row-2" data-parent="#row-2">
+								<table class="table table-bordered table-hover" style="margin-bottom: 0px">
+									<thead class="thead-dark">
+										<tr>
+											<th>Experience No.</th>
+											<th>Timestamp</th>
+											<th>Story Score</th>
+											<th>GDM Score</th>
+											<th>Time</th>
+											<th>Actions</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2018-08-08 05:55:20</td>
+											<td>15/30</td>
+											<td>57/60</td>
+											<td>12 min</td>
+											<td><a href="#">See Journey Graph</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
 					</tr>
 				</tbody>
 			</table>
