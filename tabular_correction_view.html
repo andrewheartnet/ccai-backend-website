@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Below metas are set following https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<title>CCAI - Correction Page</title>
+	</head>
+
+	<body style="background-color: #f7eaff;">
+		<div class="container">
+			<h1>CCAI - Correction View</h1>
+
+			<table class="table table-bordered table-hover">
+				<thead class="thead-dark">
+					<tr>
+						<th>Input NIK</th>
+						<th>Timestamp</th>
+						<th>Story Score</th>
+						<th>GDM Score</th>
+						<th>POSM Score</th>
+						<th>Proposal Score</th>
+						<th>Times</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1234-1235-1236 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-row-1">edit</button></td>
+						<td>2018-08-08 05:55:20</td>
+						<td>26/30</td>
+						<td>40/60</td>
+						<td>5/10</td>
+						<td>0/5</td>
+						<td>12 min</td>
+					</tr>
+
+					<tr>
+						<td>1234-1233-1232 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-row-2">edit</button></td>
+						<td>2018-08-09 05:55:20</td>
+						<td>30/30</td>
+						<td>50/60</td>
+						<td>9/10</td>
+						<td>3/5</td>
+						<td>10 min</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Modal Row 1, TODO: refactor -->
+		<div class="modal fade" id="modal-row-1" tabindex="-1" role="dialog" aria-labelledby="modal-label-1" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal-label-1">Edit NIK</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="modal-row-1-nik">NIK</label>
+								<input type="text" class="form-control" id="modal-row-1-nik" placeholder="Enter NIK" value="1234-1233-1432">
+							</div>
+							<div class="form-group">
+								<label for="modal-row-1-name">Name</label>
+								<input type="text" class="form-control" id="modal-row-1-name" placeholder="Enter Name" value="Bejo Sakti Maulana">
+							</div>
+						</form>
+
+						Is this person joined the VR simulation?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Update</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Row 2, TODO: refactor -->
+		<div class="modal fade" id="modal-row-2" tabindex="-1" role="dialog" aria-labelledby="modal-label-2" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal-label-2">Edit NIK</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="modal-row-2-nik">NIK</label>
+								<input type="text" class="form-control" id="modal-row-2-nik" placeholder="Enter NIK" value="1234-1233-1436">
+							</div>
+							<div class="form-group">
+								<label for="modal-row-2-name">Name</label>
+								<input type="text" class="form-control" id="modal-row-2-name" placeholder="Enter Name" value="Mira Sumira Lisa">
+							</div>
+						</form>
+
+						Is this person joined the VR simulation?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Update</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$("#edit-row-1").click(function(){
+					alert('I got a click');
+			});
+		</script>
+	</body>
+</html>
